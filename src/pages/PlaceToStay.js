@@ -1,7 +1,7 @@
 import React from "react";
 import place from "../data/place";
 import { AiFillStar } from "react-icons/ai";
-import Location from "../assets/images/location-icon.png";
+import Location from "../images/location-icon.png";
 
 const PlaceToStay = () => {
   return (

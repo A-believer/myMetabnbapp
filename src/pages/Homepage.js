@@ -1,14 +1,23 @@
 import React from "react";
 import home from "../data/home";
 import Button from "../components/Button";
-import Hero1 from "../assets/images/hero1.png";
-import Hero2 from "../assets/images/hero2.png";
-import Hero3 from "../assets/images/hero3.png";
-import Hero4 from "../assets/images/hero4.png";
-import Sponsor1 from "../assets/images/sponsor1.png";
-import Sponsor2 from "../assets/images/sponsor2.png";
-import Sponsor3 from "../assets/images/sponsor3.png";
-import GroupImage from "../assets/images/group-image.png";
+
+import a from "../images/a.png";
+import e from "../images/e.png";
+import k from "../images/k.png";
+import m from "../images/m.png";
+import s from "../images/s.png";
+import t from "../images/t.png";
+import mbtoken from "../images/MBToken.png";
+import opensea from "../images/OpenSea.png";
+import Hero1 from "../images/hero1.png";
+import Hero2 from "../images/hero2.png";
+import Hero3 from "../images/hero3.png";
+import Hero4 from "../images/hero4.png";
+import Sponsor1 from "../images/sponsor1.png";
+import Sponsor2 from "../images/sponsor2.png";
+import Sponsor3 from "../images/sponsor3.png";
+import GroupImage from "../images/group-image.png";
 import { AiFillStar } from "react-icons/ai";
 
 const Homepage = () => {
@@ -29,11 +38,11 @@ const Homepage = () => {
           <div className="flex relative overflow-hidden">
             <input
               type="search"
-              className="outline-none border border-[#a3a3a3] px-1 lg:px-7 w-4/5 md:w-3/4 py-3 rounded-l-lg"
+              className="outline-none border border-[#a3a3a3] px-1 lg:px-7 w-3/5 md:w-3/4 py-3 rounded-l-lg"
               id=""
               placeholder="Search for location"
             />
-            <button className="bg-primary absolute md:relative right-0 text-white py-3.5 px-3 md:px-8 rounded-r-lg">
+            <button className="bg-[#A02279] hover:bg-pink-900 absolute md:relative right-0 text-white py-4 px-4 md:px-8 rounded-r-lg">
               Search
             </button>
           </div>
@@ -49,26 +58,50 @@ const Homepage = () => {
           </div>
         </div>
       </section>
-      <section className="mb-10 mt-16 bg-primary py-3">
-        <section className="bg-primary">
-          <div className="flex justify-between items-center max-w-7xl m-auto px-5 lg:px-10 py-2">
+      <section className="mb-10 mt-16 bg-[#A02279] py-3 h-24">
+        <div className="flex justify-between items-center max-w-7xl m-auto px-5 lg:px-10  pt-3">
+          <div className=" flex ml-4">
             <img
               src={Sponsor1}
               alt="MBToken"
-              className="object-contain w-24 md:w-auto h-auto"
+              className="w-12 md:w-auto h-12 pb-2"
             />
+            <img
+              src={mbtoken}
+              alt="MBToken"
+              className="md:w-auto h-10 pl-1 pt-1"
+            />
+          </div>
+          <div className="flex">
             <img
               src={Sponsor2}
               alt="Metamask"
-              className="object-contain w-24 md:w-auto h-auto"
+              className="w-12 md:w-auto h-12 pr-2"
             />
+            <p className="flex ">
+              <img src={m} alt="" className="w-6 md:w-auto h-6" />
+              <img src={e} alt="" className="w-10 md:w-auto h-10" />
+              <img src={t} alt="" className="w-10 md:w-auto h-10" />
+              <img src={a} alt="" className="w-10 md:w-auto h-10" />
+              <img src={m} alt="" className="w-10 md:w-auto h-10" />
+              <img src={a} alt="" className="w-10 md:w-auto h-10" />
+              <img src={s} alt="" className="w-10 md:w-auto h-10" />
+              <img src={k} alt="" className="w-10 md:w-auto h-10" />
+            </p>
+          </div>
+          <div className="flex">
             <img
               src={Sponsor3}
               alt="Opensea"
-              className="object-contain w-24 md:w-auto h-auto"
+              className="w-12 md:w-auto h-14 pb-2 pr-3"
+            />
+            <img
+              src={opensea}
+              alt="OpenSea"
+              className="object-contain w-10 md:w-auto h-11 pt-3"
             />
           </div>
-        </section>
+        </div>
       </section>
       <h2 className="font-bold text-3xl px-3 md:text-5xl text-center text-black py-10">
         Inspiration for your next adventure
@@ -100,7 +133,7 @@ const Homepage = () => {
           </div>
         ))}
       </section>
-      <section className="bg-primary p-5 lg:p-16">
+      <section className="bg-[#A02279] p-5 lg:p-16">
         <div className="flex justify-between px-5 md:pt-16">
           <div className="text-white md:max-w-md mt-16 md:p-4">
             <h2 className="font-bold text-5xl">Metabnb NFTs</h2>
@@ -113,7 +146,7 @@ const Homepage = () => {
               className=""
               border
               bgColor="bg-white"
-              textColor="text-primary"
+              textColor="text-pink-800"
             >
               Learn more
             </Button>

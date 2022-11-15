@@ -6,9 +6,9 @@ import { HiOutlineMenuAlt1 } from "react-icons/hi";
 import { RiArrowRightSLine } from "react-icons/ri";
 import PropTypes from "prop-types";
 
-import Logo from "../../assets/images/logo.png";
-import Wallet1 from "../../assets/images/wallet1.png";
-import Wallet2 from "../../assets/images/wallet2.png";
+import Logo from "../images/logo.png";
+import Wallet1 from "../images/wallet1.png";
+import Wallet2 from "../images/wallet2.png";
 import { toggleScroll } from "../general";
 import Button from "./Button";
 
@@ -66,7 +66,7 @@ function Header() {
             </div>
             <Button
               className="hidden lg:block"
-              bgColor="bg-primary"
+              bgColor="bg-[#A02279] hover:bg-pink-900"
               textColor="text-white"
               onClick={() => setShowModal(true)}
             >
