@@ -23,12 +23,12 @@ const PlaceToStay = () => {
         {place.map((item) => (
           <div
             key={item?.sn}
-            className="border border-[#d7d7d7] rounded-lg p-3 text-xs"
+            className="border border-[#d7d7d7] rounded-lg p-3 text-xs w-[265px]"
           >
             <img
               src={item?.img}
               alt=""
-              className="object-contain w-[300px] h-auto"
+              className="object-contain w-[260px] h-auto"
             />
             <div className="flex justify-between mt-3">
               <p>Desert King</p>
