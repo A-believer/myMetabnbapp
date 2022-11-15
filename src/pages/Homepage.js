@@ -42,7 +42,10 @@ const Homepage = () => {
               id=""
               placeholder="Search for location"
             />
-            <button className="bg-[#A02279] hover:bg-pink-900 absolute md:relative right-0 text-white py-4 px-4 md:px-8 rounded-r-lg">
+            <button
+              className="bg-[#A02279] hover:bg-pink-800 absolute md:relative right-0 text-white py-4 px-6 w-2/5 
+            md:px-8 rounded-r-lg"
+            >
               Search
             </button>
           </div>
@@ -58,35 +61,31 @@ const Homepage = () => {
           </div>
         </div>
       </section>
-      <section className="mb-10 mt-16 bg-[#A02279] py-3 h-24">
-        <div className="flex justify-between items-center max-w-7xl m-auto px-5 lg:px-10  pt-3">
+      <section className="mb-10 mt-16 bg-[#A02279] py-3 h-[70px]">
+        <div className="flex justify-between items-center max-w-7xl m-auto px-5 lg:px-10">
           <div className=" flex ml-4">
             <img
               src={Sponsor1}
               alt="MBToken"
-              className="w-12 md:w-auto h-12 pb-2"
+              className="w-10 md:w-auto h-10 pb-2"
             />
-            <img
-              src={mbtoken}
-              alt="MBToken"
-              className="md:w-auto h-10 pl-1 pt-1"
-            />
+            <img src={mbtoken} alt="MBToken" className="md:w-auto h-8 pl-1" />
           </div>
           <div className="flex">
             <img
               src={Sponsor2}
               alt="Metamask"
-              className="w-12 md:w-auto h-12 pr-2"
+              className="w-10 md:w-auto h-10 pr-2"
             />
-            <p className="flex ">
+            <p className="flex pt-2">
               <img src={m} alt="" className="w-6 md:w-auto h-6" />
-              <img src={e} alt="" className="w-10 md:w-auto h-10" />
-              <img src={t} alt="" className="w-10 md:w-auto h-10" />
-              <img src={a} alt="" className="w-10 md:w-auto h-10" />
-              <img src={m} alt="" className="w-10 md:w-auto h-10" />
-              <img src={a} alt="" className="w-10 md:w-auto h-10" />
-              <img src={s} alt="" className="w-10 md:w-auto h-10" />
-              <img src={k} alt="" className="w-10 md:w-auto h-10" />
+              <img src={e} alt="" className="w-6 md:w-auto h-6 pl-2" />
+              <img src={t} alt="" className="w-6 md:w-auto h-6 pl-2" />
+              <img src={a} alt="" className="w-6 md:w-auto h-6 pl-2" />
+              <img src={m} alt="" className="w-6 md:w-auto h-6 pl-2" />
+              <img src={a} alt="" className="w-6 md:w-auto h-6 pl-2" />
+              <img src={s} alt="" className="w-6 md:w-auto h-6 pl-2" />
+              <img src={k} alt="" className="w-6 md:w-auto h-6 pl-2" />
             </p>
           </div>
           <div className="flex">
@@ -110,18 +109,18 @@ const Homepage = () => {
         {home.map((item) => (
           <div
             key={item?.sn}
-            className="border border-[#d7d7d7] rounded-lg p-3 text-xs"
+            className="border border-[#d7d7d7] rounded-lg p-3 text-xs w-[265px]"
           >
             <img
               src={item?.img}
               alt=""
-              className="object-contain w-[300px] h-auto"
+              className="object-contain w-[260px] h-auto"
             />
             <div className="flex justify-between mt-3">
               <p>Desert King</p>
               <p className="font-semibold">1MBT per night</p>
             </div>
-            <div className="flex justify-between mt-3 ">
+            <div className="flex justify-between mt-3 text-xs tracking-tighter">
               <p>2345Km away</p>
               <p>available for 2weeks stay</p>
             </div>
