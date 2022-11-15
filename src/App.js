@@ -1,13 +1,31 @@
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Places from "./pages/Places";
+import PageWrapper from "./components/PageWrapper";
+import Homepage from "./pages/Homepage";
+import PlaceToStay from "./pages/PlaceToStay";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/places" element={<Places />} />
+        <Route
+          path="/"
+          exact
+          element={
+            <PageWrapper>
+              <Homepage />
+            </PageWrapper>
+          }
+        />
+        <Route
+          path="/place-to-stay"
+          exact
+          element={
+            <PageWrapper>
+              <PlaceToStay />
+            </PageWrapper>
+          }
+        />
       </Routes>
     </BrowserRouter>
   );
