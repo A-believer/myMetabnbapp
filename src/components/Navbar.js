@@ -2,21 +2,33 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <nav id="navbar" className="flex w-full h-12 m-auto ">
-      <div id="logo" className="flex m-1 ">
-        <img src="./houselogo.png" alt="houselogo" className="h-10 w-10 " />
-        <img src="./Metabnb.png" alt="metabnb" className="h-9 w-41 pt-1" />
+    <nav
+      id="navbar"
+      className="flex flex-row w-full h-12 mx-5 text-xl font-normal py-10"
+    >
+      <div id="logo" className="flex mx-12">
+        <img src="./Metabnb.png" alt="metabnb" className="h-12 w-58 pt-2" />
       </div>
 
-      <div id="navlivks">
-        <Link to="/">Home</Link>
-        <Link to="/places">Place to stay</Link>
-        <a href="/nfts">NFTs</a>
-        <a href="/community">Community</a>
+      <div id="navlivks" className=" mx-auto leading-5 pt-5">
+        <Link to="/" className="ml-10">
+          Home
+        </Link>
+        <Link to="/places" className="ml-10">
+          Place to stay
+        </Link>
+        <Link href="/nfts" className="ml-10">
+          NFTs
+        </Link>
+        <Link href="/community" className="mx-10">
+          Community
+        </Link>
       </div>
 
-      <div>
-        <button></button>
+      <div id="connectbtn" className="mx-auto px-16 ">
+        <button className="bg-pink-800 h-12 px-8  text-white text-center rounded-xl hover:bg-pink-900">
+          Connect wallet
+        </button>
       </div>
     </nav>
   );
