@@ -1,15 +1,8 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import home from "../data/home";
 import Button from "../components/Button";
 
-import a from "../images/a.png";
-import e from "../images/e.png";
-import k from "../images/k.png";
-import m from "../images/m.png";
-import s from "../images/s.png";
-import t from "../images/t.png";
-import mbtoken from "../images/MBToken.png";
-import opensea from "../images/OpenSea.png";
 import Hero1 from "../images/hero1.png";
 import Hero2 from "../images/hero2.png";
 import Hero3 from "../images/hero3.png";
@@ -61,46 +54,26 @@ const Homepage = () => {
           </div>
         </div>
       </section>
-      <section className="mb-10 mt-16 bg-[#A02279] py-3 h-[70px]">
-        <div className="flex justify-between items-center max-w-7xl m-auto px-5 lg:px-10">
-          <div className=" flex ml-4">
+      <section className="mb-10 mt-16 bg-[#A02279] py-3">
+        <section className="bg-[#A02279]">
+          <div className="flex justify-between items-center max-w-7xl m-auto px-5 lg:px-10 py-2">
             <img
               src={Sponsor1}
               alt="MBToken"
-              className="w-10 md:w-auto h-10 pb-2"
+              className="object-contain w-24 md:w-auto h-12"
             />
-            <img src={mbtoken} alt="MBToken" className="md:w-auto h-8 pl-1" />
-          </div>
-          <div className="flex">
             <img
               src={Sponsor2}
               alt="Metamask"
-              className="w-10 md:w-auto h-10 pr-2"
+              className="object-contain w-24 md:w-auto h-12"
             />
-            <p className="flex pt-2">
-              <img src={m} alt="" className="w-6 md:w-auto h-6" />
-              <img src={e} alt="" className="w-6 md:w-auto h-6 pl-2" />
-              <img src={t} alt="" className="w-6 md:w-auto h-6 pl-2" />
-              <img src={a} alt="" className="w-6 md:w-auto h-6 pl-2" />
-              <img src={m} alt="" className="w-6 md:w-auto h-6 pl-2" />
-              <img src={a} alt="" className="w-6 md:w-auto h-6 pl-2" />
-              <img src={s} alt="" className="w-6 md:w-auto h-6 pl-2" />
-              <img src={k} alt="" className="w-6 md:w-auto h-6 pl-2" />
-            </p>
-          </div>
-          <div className="flex">
             <img
               src={Sponsor3}
               alt="Opensea"
-              className="w-12 md:w-auto h-14 pb-2 pr-3"
-            />
-            <img
-              src={opensea}
-              alt="OpenSea"
-              className="object-contain w-10 md:w-auto h-11 pt-3"
+              className="object-contain w-24 md:w-auto h-12"
             />
           </div>
-        </div>
+        </section>
       </section>
       <h2 className="font-bold text-3xl px-3 md:text-5xl text-center text-black py-10">
         Inspiration for your next adventure
